@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Creato il: Mag 29, 2022 alle 18:14
+-- Creato il: Mag 29, 2022 alle 22:31
 -- Versione del server: 10.4.21-MariaDB
 -- Versione PHP: 8.0.11
 
@@ -42,8 +42,8 @@ CREATE TABLE `corso` (
 
 INSERT INTO `corso` (`nome`, `descrizione`, `immagine`, `giorno`, `ora`, `num_likes`) VALUES
 ('Addome & PosturalGym', 'E\' un allenamento della muscolatura addominale con l’obiettivo di salvaguardare la colonna vertebrale a cui si affianca una parte di stretching mirata all’allungamento e alla flessibilità della muscolatura e delle articolazioni del corpo attraverso l’esecuzione di specifiche sequenze.', 'https://www.palestraimpattozero.it/wp-content/uploads/2016/06/ADDOME-STRETCH-3.jpg', 'venerdì', '16:30:00', 5),
-('Freestyler', 'Allenamento a 360° con l’uso di fasce di resistenza che si allacciano alle quattro estremità del corpo e di una lastra di base antisdrucciolevole. Crea una resistenza in tutte le direzioni possibili in modo che ogni movimento conta! È sicuro da usare. È divertente e raggiunge i risultati di cui hai bisogno!', 'https://www.palestraimpattozero.it/wp-content/uploads/2016/06/IMG_0736.jpg', 'giovedì', '10:30:00', 6),
-('HEAT', 'Allenamento Aerobico ad Alta Energia.  L’obiettivo è quello di creare un training aerobico mirato al consumo di grassi e al potenziamento muscolare.', 'https://www.palestraimpattozero.it/wp-content/uploads/2016/06/heat.jpg', 'lunedì', '10:30:00', 9),
+('Freestyler', 'Allenamento a 360° con l’uso di fasce di resistenza che si allacciano alle quattro estremità del corpo e di una lastra di base antisdrucciolevole. Crea una resistenza in tutte le direzioni possibili in modo che ogni movimento conta! È sicuro da usare. È divertente e raggiunge i risultati di cui hai bisogno!', 'https://www.palestraimpattozero.it/wp-content/uploads/2016/06/IMG_0736.jpg', 'giovedì', '10:30:00', 7),
+('HEAT', 'Allenamento Aerobico ad Alta Energia.  L’obiettivo è quello di creare un training aerobico mirato al consumo di grassi e al potenziamento muscolare.', 'https://www.palestraimpattozero.it/wp-content/uploads/2016/06/heat.jpg', 'lunedì', '10:30:00', 10),
 ('Intensive Workout', 'Corso ad alta intensità, mix tra aerobico e tonificazione con interessamento di tutti i gruppi muscolari', 'https://www.palestraimpattozero.it/wp-content/uploads/2016/06/c3d15b7c-4c6a-4e36-8a9b-bf6136143bc2.jpg', 'mercoledì', '10:30:00', 2),
 ('Pilates', 'Il metodo Pilates è un tipo di allenamento che insegna ad assumere una corretta postura e a dare maggiore armonia e fluidità nei movimenti. Questo tipo di allenamento favorisce il miglioramento della nostra postura e del corpo nella sua globalità.', 'https://www.palestraimpattozero.it/wp-content/uploads/2016/06/pilates_class.jpg', 'martedì', '16:30:00', 6),
 ('Piloga', 'L’obiettivo del Piloga è la messa a punto di un protocollo di lavoro che esalta le caratteristiche di concentrazione dello yoga fondendole insieme a quelle più spiccatamente fisiche del Pilates. Un mix di movimenti specifici per un allenamento globale del corpo, senza dimenticare l’aspetto mentale.', 'https://www.palestraimpattozero.it/wp-content/uploads/2016/06/PILOGA-1.jpg', 'lunedì', '16:30:00', 3),
@@ -89,7 +89,10 @@ INSERT INTO `forum` (`id`, `utente`, `commento`, `data`) VALUES
 (17, 'prova', 'mobile', '2022-05-28 11:45:57'),
 (18, 'tre', 'tre', '2022-05-29 18:06:33'),
 (19, 'prova', 'ciaooo', '2022-05-29 18:11:21'),
-(20, 'due', 'ciao', '2022-05-29 18:12:45');
+(20, 'due', 'ciao', '2022-05-29 18:12:45'),
+(21, 'username', 'il mio primo commento', '2022-05-29 22:02:13'),
+(23, 'username', 'prova', '2022-05-29 22:05:04'),
+(24, 'username', ' ciao', '2022-05-29 22:05:27');
 
 -- --------------------------------------------------------
 
@@ -126,7 +129,8 @@ INSERT INTO `iscritto` (`username`, `email`, `nome`, `cognome`, `eta`, `password
 ('prova2', 'ko@jid.jo', 'uno', 'uno', 16, '$2y$10$g2ZADxK7fISxJst.0KirbOapHKk7cYEBEbCq8w5i/YSgxsV9fs3Je', 'm'),
 ('Scilla', 'daniele.coco.1998@gmail.com', 'Daniele', 'Coco', 23, '$2y$10$3iNqBy.I0O55Yx25bkJ7YelgQQ3cxsX0tx9S5qFiYQfDPmPmOXku6', 'm'),
 ('tre', 'tre@tre.tre', 'tre', 'tre', 3, '$2y$10$V7V6Dx2FUT3hD1TODs9FJ.LaESYKcZOnTdbNYeNa5P8pDNzXhWI7O', 'm'),
-('uno', 'uno', 'uno', 'uno', 1, 'uno', 'f');
+('uno', 'uno', 'uno', 'uno', 1, 'uno', 'f'),
+('username', 'email@mail.it', 'nome', 'cognome', 18, '$2y$10$grp9oSCA6fscz9tE3t3cU.SZMy5l9KDvqUromF.ULJJph23PQ9Luu', 'm');
 
 -- --------------------------------------------------------
 
@@ -191,7 +195,9 @@ INSERT INTO `likes` (`utente`, `nome_corso`) VALUES
 ('tre', 'Addome & PosturalGym'),
 ('tre', 'Pilates'),
 ('tre', 'SWAT'),
-('tre', 'WBS(Well Back System)');
+('tre', 'WBS(Well Back System)'),
+('username', 'Freestyler'),
+('username', 'HEAT');
 
 --
 -- Trigger `likes`
@@ -220,47 +226,6 @@ if EXISTS (SELECT *
 end
 $$
 DELIMITER ;
-
--- --------------------------------------------------------
-
---
--- Struttura della tabella `login`
---
-
-CREATE TABLE `login` (
-  `username` varchar(255) NOT NULL,
-  `pswd` varchar(255) DEFAULT NULL,
-  `nome` varchar(255) DEFAULT NULL,
-  `surname` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dump dei dati per la tabella `login`
---
-
-INSERT INTO `login` (`username`, `pswd`, `nome`, `surname`) VALUES
-('', '', '', '');
-
--- --------------------------------------------------------
-
---
--- Struttura della tabella `preferiti`
---
-
-CREATE TABLE `preferiti` (
-  `user` varchar(255) NOT NULL,
-  `title` varchar(255) NOT NULL,
-  `img_url` varchar(5000) DEFAULT NULL,
-  `content` text DEFAULT NULL,
-  `link` varchar(5000) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dump dei dati per la tabella `preferiti`
---
-
-INSERT INTO `preferiti` (`user`, `title`, `img_url`, `content`, `link`) VALUES
-('', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -321,7 +286,11 @@ INSERT INTO `scheda` (`utente`, `nome_corso`, `giorno`, `ora`) VALUES
 ('tre', 'Addome & PosturalGym', 'venerdì', '16:30:00'),
 ('tre', 'Freestyler', 'giovedì', '10:30:00'),
 ('tre', 'Pilates', 'martedì', '16:30:00'),
-('tre', 'WBS(Well Back System)', 'venerdì', '10:30:00');
+('tre', 'WBS(Well Back System)', 'venerdì', '10:30:00'),
+('username', 'Addome & PosturalGym', 'venerdì', '16:30:00'),
+('username', 'HEAT', 'lunedì', '10:30:00'),
+('username', 'Piloga', 'lunedì', '16:30:00'),
+('username', 'WBS(Well Back System)', 'venerdì', '10:30:00');
 
 --
 -- Indici per le tabelle scaricate
@@ -355,18 +324,6 @@ ALTER TABLE `likes`
   ADD KEY `idx_crs` (`nome_corso`);
 
 --
--- Indici per le tabelle `login`
---
-ALTER TABLE `login`
-  ADD PRIMARY KEY (`username`);
-
---
--- Indici per le tabelle `preferiti`
---
-ALTER TABLE `preferiti`
-  ADD PRIMARY KEY (`user`,`title`);
-
---
 -- Indici per le tabelle `scheda`
 --
 ALTER TABLE `scheda`
@@ -382,7 +339,7 @@ ALTER TABLE `scheda`
 -- AUTO_INCREMENT per la tabella `forum`
 --
 ALTER TABLE `forum`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- Limiti per le tabelle scaricate
