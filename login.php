@@ -54,15 +54,15 @@
         <article>
             <nav>
                 <span id="nome">Stay Fit</span>
-                <a href="http://localhost/home.php">Home</a>
-                <a href="http://localhost/corsi.php">Corsi</a>
-                <a href="http://localhost/account.php">La mia scheda</a>
+                <a href="home.php">Home</a>
+                <a href="corsi.php">Corsi</a>
+                <a href="account.php">La mia scheda</a>
 
-                <div class="menu-hidden" id="menuT">
-                    <a href="http://localhost/home.php">Home</a>
-                    <a href="http://localhost/corsi.php">Corsi</a>
-                    <a href="http://localhost/account.php">La mia scheda</a>
-                </div>
+            <div class="menu-hidden" id="menuT">
+                <a href="home.php">Home</a>
+                <a href="corsi.php">Corsi</a>
+                <a href="account.php">La mia scheda</a>
+            </div>
                 
                 <div id="menu">
                     <div></div>
